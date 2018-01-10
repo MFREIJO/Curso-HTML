@@ -1,0 +1,46 @@
+/* Comentario */
+html {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	background-color: #8CABE5;
+
+}
+h1 {
+	font-size: 60px;
+	font-family: 'Roboto Mono';
+	text-align: center;
+	padding: 20px 0;
+	color: #00539F;
+	text-shadow: 3px 3px 1px black;
+}
+p, li {
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+li.error strong {
+	color: red;
+}
+
+@import "archivo.css";
+
+.patriota {
+	background-color: yellow;
+}
+a {
+	color:  #5C88DA;
+}
+img{
+	width: 100%;
+	display: block;
+	margin: 10px auto;
+	border-radius: 50%;
+}
+body{
+	width: 600px;
+	margin: 0 auto;
+	background-color: #F2F2F2;
+	padding: 0 20px 20px 20px;
+	border: 5px solid #333333;
+	color: #333333;
+}
