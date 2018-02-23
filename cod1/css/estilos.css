@@ -1,0 +1,61 @@
+@import url('//cdn.abanca.io/assets/fonts/museo-sans.css');
+
+html {
+    font-family: 'Museo Sans', sans-serif;
+    color: #333333;
+}
+
+body{
+	padding: 60px 120px;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+.modulo {
+	background-color: #F2F2F2; 
+	padding: 20px; 
+}
+ul.example {
+	list-style: none; 
+	padding: 0;
+	margin: 0;	
+}
+.example li {
+	width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+ul.example div {
+	flex-basis: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.codigo {
+	background-color: #272822;
+}
+div.ejemplo {
+	background-color: #F2F2F2;
+}
+div.ejemplo img {
+	width: 230px;
+    height: 148.23px;
+   	margin: 10px;
+}
+
+div.ejemplo img.medium {
+	width: 500px;
+    height: 322.23px;
+} 
