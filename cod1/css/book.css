@@ -1,0 +1,20 @@
+
+		.book-header h1 {
+			font-size: 18px;
+		}
+		.book-foot {
+			color: #999999;
+			font-size: 14px;
+		}
+		.book-ficha {
+			color: #999999;
+			font-size: 14px;
+		}
+		.book.is-row {
+			display: flex;
+		}
+		/* Todos los elementos que cuelgan de boo.is-row
+		tendrán un margen a la derecha*/
+		.book.is-row > * {
+			margin-right: 10px;
+		}

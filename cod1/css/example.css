@@ -1,0 +1,19 @@
+.example {
+	display: flex;
+	margin-bottom: 10px;
+}
+.example-code {
+	background-color: #272822;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.example-code p{
+	color: white;
+}
+.example-preview {
+	background-color: #F2F2F2;
+	padding: 20px;
+	flex-grow: 1; /*La preview debe ocupar el espacio restante*/
+}

@@ -9,87 +9,206 @@
     <link rel="icon" type="img/x-icon" href="img/favicon.ico">
 </head>
 <body>
-	<section class="intro">
-		<h1>Guía burros</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-		</p>
-	</section>
+	<article class="guiaburros">
+		<header class="guiaburros-header">
+			<h1>Guía burros</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</header>
 
-	<!-- position: static|absolute|fixed|relative|sticky|initial|inherit; -->
-
-	<section class="modulo">
 		<h2>Position</h2>
-	</section>
+		<h3>Absoluta</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<aside class="example">
+			<div class="example-code">
+				<p>Falta imagen de código</p>
+			</div>
+			<div class="example-preview">
+				<img class="example-preview-image" src="img/mario.jpeg" height="500">
+			</div>
+		</aside>
 
-	<section class="absolute">
-		<h3>Position absoluta</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</p>
-		<ul class="example">
-			<p>Primer ejemplo</p>
-			<li>
-				<div class="codigo">
-					
-				</div>
-				<div class="ejemplo">
-					<img class="medium" src="img/mario.jpeg">
-				</div>
-			</li>
-		</ul>
-	</section>
+		<h3>Relativa</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		<aside class="example">
+			<div class="example-code">
+				<p>Falta imagen de código</p>
+			</div>
+			<div class="example-preview">
+				<img class="example-preview-image" src="img/yoschi.jpeg" height="500">
+			</div>
+		</aside>
 
-	<section class="relative">
-		<h3>Position relative</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</p>
-		<ul class="example">
-			<p>Primer ejemplo</p>
-			<li>
-				<div class="codigo">
-					
-				</div>
-				<div class="ejemplo">
-					<img class="medium" src="img/yoschi.jpeg">
-				</div>
-			</li>
+		<h3>Sticky</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		<aside class="example">
+			<div class="example-code">
+				<p>Falta imagen de código</p>
+			</div>			
+			<div class="example-preview">
+				<img class="example-preview-image" src="img/happy.jpeg" height="500">
+			</div>
+		</aside>
+
+		<h2>Imágenes</h2>
+		<h3>Básico</h3>
+		<p>Para definir un tamaño fijo podemos indicarlo en el propio html</p>
+		<aside class="example">
+			<div class="example-code">
+				<img class="example-code-image" src="img/cod/imagen-basico-01.png">
+			</div>
+			<div class="example-preview">
+				<img class="example-preview-image" src="img/yoschi.jpeg" height="100">
+			</div>
+		</aside>
+
+		<h2>Tipos de campos</h2>
+		<h3>Básicos</h3>
+		<p>Un único valor</p>
+		<aside class="example">
+			<div class="example-code">
+				<img class="example-code-image" src="img/cod/campos-basico-01.png">
+			</div>
+			<div class="example-preview">
+				<p><input placeholder="Escribe tu nombre"></p>
+				<p><input type="range"></p>
+				<p><input type="number" min="1" max="10" value="3"></p>
+				<p><input type="date" value="2018-02-15" min="2018-02-10"></p>
+				<p><textarea>Campo multiline</textarea></p>		
+			</div>
+		</aside>
+
+		<p>Varios valores</p>
+		<aside class="example">
+			<div class="example-code">
+				<img class="example-code-image" src="img/cod/campos-basico-02.png">
+			</div>
+			<div class="example-preview">
+				<p><input type="checkbox"></p>
+				<p><input type="checkbox" checked></p>
+				<p><input type="radio" name="option" checked></p>
+				<p><input type="radio" name="option"></p>
+				<p><select>
+						<option>🥑</option>
+						<option>🥩</option>
+						<option>🥓</option>
+						<option>🥥</option>
+						<option>🍳</option>
+					</select>
+				</p>
+				<p><input list="paises">
+					<datalist id="paises">
+						<option>España</option>
+						<option>Portugal</option>
+						<option>Francia</option>
+					</datalist>
+				</p>
+			</div>
+		</aside>
+
+		<h2>Elemenstos html</h2>
+		<h3>Metadaso del documento</h3>
+		<p>Los metadatos contienen información sobre la página. Recomendamos que los metadatos para estilos y scripts se vinculen a otro archivo que tenga la información.</p>
+		<ul>
+			<li><strong>title</strong> define el título del documento, que se muestra en la barra de título de un navegador o en la pestaña de la página.</li>
 		</ul>
-	</section>
-	<section class="sticky">
-		<h3>Position sticky</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</p>
-		<ul class="example">
-			<p>Primer ejemplo</p>
+
+		<h3>Secciones</h3>
+		<ul>
 			<li>
-				<div class="codigo">
-					
-				</div>
-				<div class="ejemplo">
-					<img class="medium" src="img/happy.jpeg">
-				</div>
+				<strong>adress</strong> se debe utilizar para transmitir información de contactos. Notas de uso:
+				<ul>
+					<li>Para representar una dirección que no tiene que ver con una dirección de contacto recomendamos utilizar <strong>p</strong></li>
+					<li>No debe contener otra información que no sea de contacto, como por ejemplo la fecha de publicación (para ello utilizad <strong>time</strong>).</li>
+					<li>Normalmente se utilizará el address dentro de un <strong>footer</strong>.</li>
+				</ul>
 			</li>
+			<li><strong>article</strong> componente independiente reutilizable</li>
+			<li><strong>header</strong> cabecera del bloque</li>
+			<li><strong>footer</strong> pie del bloque</li>
+			<li><strong>aside</strong> contenido relacionado con el artículo pero no forma parte de él (notas al márgen)</li>
 		</ul>
-	</section>
-	<section class="modulo">
-		<h2> Imágenes</h2>
-	</section>
-	<section>
-		<h3>¿Cómo usarlas?</h3>
-		<ul class="example">
-			<p>Tamaño fijo de imágen</p>
-			<li>
-				<div class="codigo">
-					<img src="img/cod/img-tamfijo.png">
-				</div>
-				<div class="ejemplo">
-					<img src="img/yoschi.jpeg">
-				</div>
-			</li>
+		<aside class="example">
+			<div class="example-code">
+				<img class="example-code-image" src="img/cod/elementos-secciones-adress.png">
+			</div>
+			<div class="example-preview">
+				<address>
+					Carlos Freire Castro<br>
+					Emilio González López, Nº2 - Bajo B<br>
+					15011 - A Coruña<br>
+				</address>
+			</div>
+		</aside>
+		<aside class="example">
+			<div class="example-code">
+				<img class="example-code-image" src="img/cod/elementos-secciones-article-cod.png">
+			</div>
+			<div class="example-preview">
+				<article class="book">
+					<header class="book-header">
+						<h1>El tigre y el gato</h1>
+					</header>
+					<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100">
+					<details class="book-card">
+						<summary>Ver detalles</summary>
+						Autor: Eitaro Oshima<br>
+						Editorial: Corimbo
+					</details>
+					<div class="book-text">
+						<p>Moraleja: Nunca enseñes todo lo que sabes ni muestres todo lo que eres por que a veces ese silencio puede hacer la diferencia.... entre grandeza e ineptitud.</p>
+					</div>
+					<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>
+				</article>
+			</div>			
+		</aside>
+
+		<h2>Flexbox</h2>
+		<h3>Lo básico</h3>
+		<p>En flexbox existen dos actores</p>
+		<ul>
+			<li>El <strong>padre</strong>: es el elemento que aloja a los otros elementos.</li>
+			<li>Los <strong>hijos</strong>: son los elementos alojados que dependen directamente del padre.</li>
 		</ul>
-	</section>	
+
+		<aside class="example">
+			<div class="example-code">
+				<p>HTML</p>
+				<img class="example-code-image" src="img/cod/flexbox-basico-row-html.png">
+			</div>
+			<div class="example-code">
+				<p>CSS</p>
+				<img class="example-code-image" src="img/cod/flexbox-basico-row.png">
+			</div>
+		</aside>
+
+		<article class="book is-row">
+			<header class="book-header">
+				<h1>El tigre y el gato</h1>
+			</header>
+			<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100">
+			<div class="book-ficha">
+				Autor: Eitaro Oshima<br>
+				Editorial: Corimbo
+			</div>
+			<div class="book-text">
+				<p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres.</p>
+				<p>Ese silencio puede hacer la diferencia entre grandeza e ineptitud</p>
+			</div>
+			<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>			
+		</article>
+
+
+
+	</article>
 </body>
 </html>

@@ -1,0 +1,12 @@
+html {
+    /*font-family: 'Museo Sans', sans-serif;*/
+    color: #333333;
+}
+body{
+	padding: 60px 120px;
+}
+h2 {
+	background-color: #F2F2F2; 
+	padding: 20px; 
+	margin-top: 40px;
+}
