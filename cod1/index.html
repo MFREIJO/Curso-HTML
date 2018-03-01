@@ -119,23 +119,23 @@
 		<h3>Metadaso del documento</h3>
 		<p>Los metadatos contienen información sobre la página. Recomendamos que los metadatos para estilos y scripts se vinculen a otro archivo que tenga la información.</p>
 		<ul>
-			<li><strong>title</strong> define el título del documento, que se muestra en la barra de título de un navegador o en la pestaña de la página.</li>
+			<li><code>title</code> define el título del documento, que se muestra en la barra de título de un navegador o en la pestaña de la página.</li>
 		</ul>
 
 		<h3>Secciones</h3>
 		<ul>
 			<li>
-				<strong>adress</strong> se debe utilizar para transmitir información de contactos. Notas de uso:
+				<code>adress</code> se debe utilizar para transmitir información de contactos. Notas de uso:
 				<ul>
-					<li>Para representar una dirección que no tiene que ver con una dirección de contacto recomendamos utilizar <strong>p</strong></li>
-					<li>No debe contener otra información que no sea de contacto, como por ejemplo la fecha de publicación (para ello utilizad <strong>time</strong>).</li>
-					<li>Normalmente se utilizará el address dentro de un <strong>footer</strong>.</li>
+					<li>Para representar una dirección que no tiene que ver con una dirección de contacto recomendamos utilizar <code>p</code></li>
+					<li>No debe contener otra información que no sea de contacto, como por ejemplo la fecha de publicación (para ello utilizad <code>time</code>).</li>
+					<li>Normalmente se utilizará el address dentro de un <code>footer</code>.</li>
 				</ul>
 			</li>
-			<li><strong>article</strong> componente independiente reutilizable</li>
-			<li><strong>header</strong> cabecera del bloque</li>
-			<li><strong>footer</strong> pie del bloque</li>
-			<li><strong>aside</strong> contenido relacionado con el artículo pero no forma parte de él (notas al márgen)</li>
+			<li><code>article</code> componente independiente reutilizable</li>
+			<li><code>header</code> cabecera del bloque</li>
+			<li><code>footer</code> pie del bloque</li>
+			<li><code>aside</code> contenido relacionado con el artículo pero no forma parte de él (notas al márgen)</li>
 		</ul>
 		<aside class="example">
 			<div class="example-code">
@@ -156,7 +156,7 @@
 			<div class="example-preview">
 				<article class="book">
 					<header class="book-header">
-						<h1>El tigre y el gato</h1>
+						<h4>El tigre y el gato</h4>
 					</header>
 					<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100">
 					<details class="book-card">
@@ -173,42 +173,115 @@
 		</aside>
 
 		<h2>Flexbox</h2>
-		<h3>Lo básico</h3>
-		<p>En flexbox existen dos actores</p>
-		<ul>
-			<li>El <strong>padre</strong>: es el elemento que aloja a los otros elementos.</li>
-			<li>Los <strong>hijos</strong>: son los elementos alojados que dependen directamente del padre.</li>
-		</ul>
+		<section class="flexbox-lo-basico">
+			<h3>Lo básico</h3>
+			<p>En flexbox existen dos actores</p>
+			<ul>
+				<li>El <strong>padre</strong>: es el elemento que aloja a los otros elementos.</li>
+				<li>Los <strong>hijos</strong>: son los elementos alojados que dependen directamente del padre.</li>
+			</ul>
+			<aside class="example">
+				<div class="example-code">
+					<p>HTML</p>
+					<img class="example-code-image" src="img/cod/flexbox-basico-row-html.png">
+				</div>
+				<div class="example-code">
+					<p>CSS</p>
+					<img class="example-code-image" src="img/cod/flexbox-basico-row-css.png">
+				</div>
+			</aside>
+			<article class="book is-row">
+				<header class="book-header">
+					<h4>El tigre y el gato</h4>
+				</header>
+				<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100" width="100">
+				<div class="book-ficha">
+					Autor: Eitaro Oshima<br>
+					Editorial: Corimbo
+				</div>
+				<div class="book-text">
+					<p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres.</p>
+					<p>Ese silencio puede hacer la diferencia entre grandeza e ineptitud</p>
+				</div>
+				<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>			
+			</article>
+		</section>
 
-		<aside class="example">
-			<div class="example-code">
-				<p>HTML</p>
-				<img class="example-code-image" src="img/cod/flexbox-basico-row-html.png">
-			</div>
-			<div class="example-code">
-				<p>CSS</p>
-				<img class="example-code-image" src="img/cod/flexbox-basico-row.png">
-			</div>
-		</aside>
+		<section class="flexbox-propiedades">
+			<h3>Propiedades de los hijos</h3>
+			<p>Los hijos dentro del elemento padre se pueden comportar de distinta forma:</p>
+			<ul>
+				<li>Pueden tener un ancho base con la propiedad llamada <code>flex-basis</code>.</li>
+				<li>Pueden contraerse con la propiedad<code>flex-shrink</code></li>
+				<li>Y expandirse con <code>flex-grow</code>. Por defecto es 0.</li>
+			</ul>
+			<p>Por defecto, el ancho de cada elemento es automático, es decir, se ajusta según su contenido, por lo que si una columna necesita más espacio va a ser más ancha que otra que necesite menos espacio.</p>
+			<aside class="example">
+				<div class="example-code">
+					<img class="example-code-image" src="img/cod/flexbox-propiedades-basis.png">
+				</div>
+				<div class="example-preview">
+					<article class="book is-row is-basis">
+						<header class="book-header">
+							<h4>El tigre y el gato</h4>
+						</header>
+						<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100" width="100">
+						<div class="book-ficha">
+							Autor: Eitaro Oshima<br>
+							Editorial: Corimbo
+						</div>
+						<div class="book-text">
+							<p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres.</p>
+							<p>Ese silencio puede hacer la diferencia entre grandeza e ineptitud</p>
+						</div>
+						<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>			
+					</article>
+				</div>
+			</aside>
+			<aside class="example">
+				<div class="example-code">
+					<img class="example-code-image" src="img/cod/flexbox-propiedades-shrink.png">
+				</div>
+				<div class="example-preview">
+					<article class="book is-shrink">
+						<header class="book-header">
+							<h4>El tigre y el gato</h4>
+						</header>
+						<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100" width="100">
+						<div class="book-ficha">
+							Autor: Eitaro Oshima<br>
+							Editorial: Corimbo
+						</div>
+						<div class="book-text">
+							<p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres.</p>
+							<p>Ese silencio puede hacer la diferencia entre grandeza e ineptitud</p>
+						</div>
+						<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>			
+					</article>
+				</div>
+			</aside>
+		</section>
 
-		<article class="book is-row">
-			<header class="book-header">
-				<h1>El tigre y el gato</h1>
-			</header>
-			<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100">
-			<div class="book-ficha">
-				Autor: Eitaro Oshima<br>
-				Editorial: Corimbo
-			</div>
-			<div class="book-text">
-				<p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres.</p>
-				<p>Ese silencio puede hacer la diferencia entre grandeza e ineptitud</p>
-			</div>
-			<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>			
-		</article>
 
+					<article class="book is-colum">
+						<header class="book-header">
+							<h4>El tigre y el gato</h4>
+						</header>
+						<img class="book-image" src="img/cod/elementos-secciones-article.jpg" height="100" width="100">
+						<div class="book-ficha">
+							Autor: Eitaro Oshima<br>
+							Editorial: Corimbo
+						</div>
+						<div class="book-text">
+							<p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres.</p>
+							<p>Ese silencio puede hacer la diferencia entre grandeza e ineptitud</p>
+						</div>
+						<footer class="book-foot">Consultado en <time datetime="2018-02-24 12:30">Febrero 2018</time></footer>			
+					</article>
 
 
 	</article>
+
+	
 </body>
 </html>

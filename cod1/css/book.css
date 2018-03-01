@@ -1,7 +1,5 @@
 
-		.book-header h1 {
-			font-size: 18px;
-		}
+
 		.book-foot {
 			color: #999999;
 			font-size: 14px;
@@ -13,8 +11,42 @@
 		.book.is-row {
 			display: flex;
 		}
-		/* Todos los elementos que cuelgan de boo.is-row
+		/* Todos los elementos 
+		que cuelgan de boo.is-row
 		tendrán un margen a la derecha*/
 		.book.is-row > * {
-			margin-right: 10px;
+			padding: 0 10px;
+			border: solid 1px #CCCCCC;
+		}
+
+		/* Todas las columnas 
+		son de 150px */
+		.book.is-row.is-basis > * {
+			flex-basis: 150px;
+		}
+
+		/*Todas las columnas 
+		son de 200px 
+		La cuarta columna no 
+		disminuye de tamaño*/
+		.book.is-shrink {
+			display: flex;
+		}
+		.book.is-shrink > * {
+			padding: 0 10px;
+			border: solid 1px #CCCCCC;
+			flex-basis: 200px;
+		}
+		.book.is-shrink div.book-text{
+			flex-shrink: 0;
+		} 
+
+		.book.is-colum {
+			display: flex;
+			flex-direction: column;
+		}
+		.book.is-colum > * {
+			padding: 0 10px;
+			border: solid 1px #CCCCCC;
+			flex-wrap: 100px;
 		}
