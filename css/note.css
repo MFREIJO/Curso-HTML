@@ -1,0 +1,51 @@
+.notes {
+	padding: 0 96px 0 96px;
+}
+.note {
+	background-color: #EEEEEE;
+	padding: 16px;
+	margin-bottom: 24px;
+	border-radius: 8px;
+	border-color: #DDDDDD;
+	border-style: groove;
+}
+.note-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.note-image {
+	padding: 10px;
+}
+.note-container {
+	padding: 24px 24px 0 24px;
+}
+.note-navegar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding-top: 5px;
+}
+.note-navegar-image {
+	padding-right: 20px;
+}
+.note-open {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #5C88DA;
+}
+.note-open img {
+	padding: 10px;
+	height: 24px;
+}
+
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+

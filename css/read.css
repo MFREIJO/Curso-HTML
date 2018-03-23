@@ -1,0 +1,35 @@
+.read {
+	padding: 0 96px 0 96px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.read-figure {
+	height: 96px;
+	width: 216px;
+	border-style: solid;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #222222;
+	display: flex;
+	align-items: flex-start;
+	border-color: #5C88DA;
+	margin-right: 24px;
+	margin-bottom: 24px;
+}
+.read-left {
+	height: 96px;
+	background-color: #F2F2F2
+}
+
+.read-img {
+	height: 24px;
+	padding: 24px;
+}
+.read-figure.is-own {
+	border-color: #00B388;
+}
+.read-text {
+	margin: 0;
+	padding: 24px;
+}

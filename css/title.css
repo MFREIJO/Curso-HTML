@@ -1,0 +1,13 @@
+.title {
+	background-color: #8CABE5;
+	border-style: solid;
+	border-color: white;
+	border-radius: 0 8px 8px 0 ;
+	width: 30%;
+	height: 56px;
+	margin: 48px 0 24px 0;
+	box-shadow: 2px 2px 5px #BBBBBB;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}

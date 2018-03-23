@@ -1,0 +1,32 @@
+.top {
+	position: fixed;
+	background-color: #F9F9F9;
+	opacity: 0.6;
+	height: 120px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.top a {
+	margin: 20px;
+	border-radius: 6px;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;	
+}
+.top-own-name {
+	color: white;
+}
+.top-external-name {
+	color: #222222;
+}
+.top-own-figure {
+	background-color: #88499C;
+}
+.top-external-figure {
+	background-color: #DDF5A9;
+}
+

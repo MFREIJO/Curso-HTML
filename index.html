@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Básico html y css</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="icon" type="img/x-icon" href="img/favicon.ico">
+</head>
+<body>
+	<section class="title"><h1>Para empezar...</h1></section>
+	<section class="notes">
+		<details class="note">
+			<summary class="note-title"><h3>GitHub<h3></summary>
+			<section class="note-container">
+				<div class="note-navegar">
+					<a href="https://github.com/" target="_blank"> 
+						<img class="note-navegar-image" src="img/navegar.jpg" width="80" height="80">
+					</a>
+					<p class="secondary">
+						MFREIJO<br>
+						276304MFUxyyyy210220<br>
+						Sublime Text para manejar ficheros<br>
+					</p>
+				</div>
+			</section>
+		</details>
+
+		<details class="note">
+			<summary class="note-title"><h3>Nuevo proyecto, pasos:</h3></summary>
+			<section class="note-container">
+				<p class="secondary">
+					Los pasos a seguir para iniciar un proyecto son:
+				</p>
+				<ul>
+					<li>Dar de alta el proyecto en el github.</li>
+					<li>Copiar el proyecto en local (generalmente www)</li>
+				</ul>
+				<code class="note-code">git clone (url del github</code>
+				<ul>
+					<li>Index.html</li>
+					<li>Carpeta img y css</li>
+					<li>favicon.ico</li>
+					<li>Instalar normalize.css</li> 
+					<li>estilos.css</li>
+					<li>reset.css</li>
+				</ul>
+			</section>
+		</details>
+
+		<details class="note">
+			<summary class="note-title">
+				<h3>index.html</h3>			
+			</summary>
+			<section class="note-container">
+				<a class="note-open" href="doc/index.txt" target="_blank">
+					<img src="img/compass.png">
+					<p>Líneas básicas del fichero</p>
+				</a>
+			</section>
+		</details>
+
+		<details class="note">
+			<summary class="note-title">
+				<h3>normalize.css</h3>	
+			</summary>		
+			<section class="note-container">
+				<p class="secondary">
+					El normalize.css nos servirá para realizar ajustes de formatos y posiciones de los elementos en todos los navegadores (normaliza las diferencias entre navegadores). 
+				</p>
+				<a class="note-open" href="https://github.com/necolas/normalize.css/blob/master/normalize.css" target="_blank">
+					<img src="img/ship.png">
+					<p>Podemos ver el código desde github</p>
+				</a>
+				<p>
+					Para instalarlo lo podemos hacer desde <strong>iTerm</strong> a través del comando:
+				</p>
+				<code class="note-code">npm install normalize.css</code>
+				<p class="secondary">
+					Lo que hace es instalar en nuestro proyecto esta estructura
+				</p>
+				<img src="img/normalize.png">
+				<p>Debemos tener el archivo <strong>pagckage</strong>.json en el proyecto (importe para poder mantener la estructura actualizada). Para instalarlo ponemos en iTerm:</p>
+				<code class="note-code">npm init</code>
+
+				<p>Debemos mantener esta <strong>estrutura actualizada</strong>. Esto lo conseguimos haciendo</p>
+				<code class="note-code">npm update</code>			
+			</section>
+		</details>
+
+		<details class="note">
+			<summary class="note-title">
+				<h3>faveicon.ico</h3>	
+			</summary>
+			<section class="note-container">
+				<a class="note-open" href="https://realfavicongenerator.net/" target="_blank">
+					<img src="img/ship.png">
+					<p>Utiliza esta página para generar el icono.</p>
+				</a>
+				<p>Pasos:</p>
+				<ul>
+					<li>Crear una imagen en sketch 1x en PNG de 80x80 (por poner un ejemplo pero sirve cualquier tamaño).</li>
+					<li>Pulsar en la página web el botón <strong> Select your Favicon picture</strong>.</li>
+					<li>Pulsar en la página web el botón <strong>Select your Favicon picture</strong>.</li>
+					<li>Nos da un mensaje sobre el tamaño de la imagen pero pulsamos en Continue with this picture.</li>
+					<li>Al final de la página pulsamos <strong>Generate your Favicons and HTML code</strong>.</li>
+					<li>Se descarga un fichero comprimido y dentro (entre otras imágenes) está el favicon.ico que debemos situar en la carpeta img</li>
+				</ul>
+			</section>
+		</details>
+
+		<details class="note">
+			<summary class="note-title"><h3>estilos.css</h3></summary>
+			<section class="note-container">
+				<a class="note-open" href="doc/estilos.txt" target="_blank">
+					<img src="img/compass.png">
+					<p>Líneas básicas del fichero.</p>
+				</a>
+				<a class="note-open" href="http://getbem.com/" target="_blank">
+					<img src="img/ship.png">
+					<p>Nomenclatura BEM para organizar css.</p>
+				</a>
+			</section>
+		</details>
+
+		<details class="note">
+			<summary class="note-title"><h3>reset.css</h3></summary>
+			<section class="note-container">
+				<a class="note-open" href="doc/reset.txt" target="_blank">
+					<img src="img/compass.png">
+					<p>Ejemplo de este fichero</p>
+				</a>
+			</section>
+		</details>
+	</section>
+
+	
+	<section class="title"><h1>Para aprender...</h1></section>
+	<section class="read">
+		<a class="read-figure is-own" href="../Flexbox/index.html" target="_blank">
+			<div class="read-left is-own">
+				<img class="read-img" src="img/lifebuoy-inverse.png">
+			</div>
+			<p class="read-text">Flexbox</p>
+		</a>
+
+		<a class="read-figure" href="http://www.htmlquick.com/es/reference/tags.html" target="_blank">
+			<div class="read-left is-own">
+				<img class="read-img" src="img/jellyfish.png">
+			</div>
+			<p class="read-text">Elemetos</p>
+		</a>
+
+		<a class="read-figure" href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/Instalacion_de_software_basico" target="_blank">
+			<div class="read-left">
+				<img class="read-img" src="img/crab.png">
+			</div>
+			<p class="read-text">
+				Curso HTML5 y CSS3
+			</p>
+		</a>
+	</section>
+	
+	<section class="title"><h1>Para inspirarte...</h1></section>
+	<section class="example">
+	</section>
+</body>
+</html>
